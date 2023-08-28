@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang''pt-br''>
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset=''UTF-8''>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+		body {
+			font-family: arial, helvetica, sans-serif;
+		}
+
+		/* Style the header */
+		header {
+			background-color: #191830;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+		}
+
+		/* Create two columns/boxes that floats next to each other */
+		nav {
+			float: left;
+			width: 30%;
+			
+			background: #c0c0c1;
+			padding: 20px;
+		}
+
+		/* Style the list inside the menu */
+		nav ul {
+			list-style-type: none;
+			text-decoration: none;
+			padding: 0;
+			color: black;
+		}
+
+		article {
+			float: left;
+			padding: 20px;
+			width: 70%;
+			background-color: #c0c0c1;
+		}
+
+		/* Clear floats after the columns */
+		section::after {
+			background: #c0c0c1;
+			display: table;
+			clear: both;
+			content: '';
+		}
+
+		section {
+    	background: #c0c0c1;
+		}
+
+		/* Style the footer */
+		footer {
+			background-color: #191830;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+
+		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		@media (max-width: 600px) {
+			nav, article {
+				width: 100%;
+				height: auto;
+			}
+		}
+		</style>
+		
+	</head>
+	<body>
+		
+		<header>
+			<h2>Curso Front-end</h2>
+		</header>
+
+		<section>
+			
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis auctor. Donec massa sapien faucibus et molestie ac. Fermentum iaculis eu non diam phasellus vestibulum lorem. Sagittis purus sit amet volutpat. Sed odio morbi quis commodo odio aenean sed. Maecenas accumsan lacus vel facilisis. Dui sapien eget mi proin. Vivamus arcu felis bibendum ut tristique et egestas quis. Vitae aliquet nec ullamcorper sit amet. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Purus sit amet luctus venenatis lectus magna fringilla. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Pellentesque adipiscing commodo elit at imperdiet dui accumsan. Odio tempor orci dapibus ultrices. Nunc consequat interdum varius sit. Mi sit amet mauris commodo quis imperdiet.</p>
+
+				<p>Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Dui vivamus arcu felis bibendum ut tristique et. Enim ut sem viverra aliquet eget sit amet tellus. Ut faucibus pulvinar elementum integer enim neque. Donec adipiscing tristique risus nec feugiat. Turpis nunc eget lorem dolor sed viverra. Risus nullam eget felis eget nunc lobortis. Vel pharetra vel turpis nunc eget lorem. Duis ultricies lacus sed turpis tincidunt id aliquet. Ullamcorper morbi tincidunt ornare massa eget egestas. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Id faucibus nisl tincidunt eget nullam non nisi est sit. Proin nibh nisl condimentum id. Tempor commodo ullamcorper a lacus vestibulum. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.</p>
+
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Pietra</p>
+		</footer>
+
+	</body>
+		
+</html>
+			
+
+
+
+
+

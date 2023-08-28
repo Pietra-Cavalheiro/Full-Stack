@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang''pt-br''>
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset=''UTF-8''>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="exercicio6.1.css">
+
+  		</head>
+			
+		<header>
+			<h2>Beauté Cosméticos</h2>
+		</header>
+
+		<section>
+			
+			<nav>
+				<ul>
+					<li><a href="site.png">Home</a></li>
+					<li><a href="sobrenos.png">Sobre</a></li>
+					<li><a href="contato.png">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Você costuma cuidar da pele?</label>
+							<input type="radio" name="linguagens" value="sim"> Sim
+							<input type="radio" name="linguagens" value="não"> Não
+							<input type="radio" name="linguagens" value="ocasionalmente"> Ocasionalmente
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Utiliza produtos naturais?</label>
+							<input type="checkbox" name="linguagens" value="sim"> Sim
+							<input type="checkbox" name="linguagens" value="não"> Não
+							<input type="checkbox" name="linguagens" value="talvez"> Talvez
+						</p>
+					</div>
+
+					<div>
+						<label>Quais destes produtos não podem faltar em sua rotina diária?</label>
+						<select>
+							<option value="Tônico">Tônico</option>
+							<option value="Cleansing oil">Cleansing oil</option>
+							<option value="Sérum facial" selected>Sérum facial</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit">
+					</div>
+
+				</form>
+				
+
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Pietra</p>
+		</footer>
+
+	</body>
+		
+</html>

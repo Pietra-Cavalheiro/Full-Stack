@@ -1,0 +1,220 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+      color: #000000;
+  }
+
+  .background {
+    background-image: url(../imagens/cookies-pattern.jpg);
+    background-repeat: repeat-x;
+      filter: blur(2px);
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      opacity: .9;
+  }
+
+  .content {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      padding: 1px;
+      text-align: center;
+      font-size: 30px;
+      color: #000000;
+  }
+
+  section {
+      padding-top: 200px;
+      background:#aa8451;
+  }
+
+  input {
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input[type="submit"] {
+      padding: 10px;
+  }
+
+      nav {
+          float: left;
+          width: 30%;
+                 
+          background: #aa8451;
+          padding: 60px;
+      }
+
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      a {
+          text-decoration: none;
+          color: #000
+      }
+
+      .pulse {
+          width: 60px;
+          height: 60px;
+          background-color: green;
+          border-radius: 50%;
+          text-align: center;
+          color: #fff;
+          line-height: 60px;
+          font-size: 18px;
+          position: relative;
+      }
+
+      .pulse:after, .pulse:before {
+          content: '';
+          position: absolute;
+          left: -10px;
+          top: -10px;
+          bottom: -10px;
+          right: -10px;
+          border-radius: 50%;
+          border: 1px solid green;
+          animation: pulse 1.5s linear infinite;
+      }
+
+      .pulse:after {
+          animation-delay: .4s;
+      }
+
+      @keyframes pulse {
+          0%{
+              transform:scale(.5);
+              opacity: 0;
+          }
+          50%{
+              transform: scale(1);
+              opacity: 1;
+          }
+          100%{
+              transform: scale(1.4);
+              opacity: 0;
+          }
+      }
+  
+      article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color:#aa8451;
+      }
+
+      button {
+        border-radius: 20px;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+
+      #imagem-01 {
+          background-color: #000000;
+          width: 200px;
+          height: 180px;
+          overflow: hidden;
+          border-radius: 50%;
+          display: flex;
+      }
+
+      #imagem-01 img {
+          width: 100%;
+      }
+
+      #imagem-vetorial {
+          width: 50px;
+      }
+
+      #imagem-02 {
+        background-color: #000000;
+        width: 200px;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    #imagem-02 img {
+        width: 100%;
+    }
+
+    .imagem-02 {
+        clear: both;
+        float: left;
+    }
+
+    #imagem-03 {
+        background-color: #000000;
+        width: 200px;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    #imagem-03 img {
+        width: 100%;
+    }
+
+    #imagem-04 {
+        background-color: #000000;
+        width: 200px;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    #imagem-04 img {
+        width: 100%;
+    }
+
+    li {
+      margin: 0 7px;
+      width: 300px;
+      float: left;
+    }
+
+    .container__content {
+        flex: 1;
+    }
+  
+  /* Clear floats after the columns */
+      section::after {
+          background: #aa8451;
+          display: table;
+          clear: both;
+          content: '';
+      }
+  
+      footer {
+          background-color: #aa8451;
+          background-image: url(../imagens/cookies-pattern.jpg);
+        width: 100%;
+          padding: 30px;
+          text-align: center;
+          color: #000000;
+ 
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+          nav, article {
+          width: 100%;
+          height: auto;
+      }
+  }
